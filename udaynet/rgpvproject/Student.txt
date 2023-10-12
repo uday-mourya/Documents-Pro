@@ -1,0 +1,18 @@
+#
+#Wed Sep 06 14:27:03 IST 2023
+Useruday=uday
+UserudayPassword=12345678
+Userudaymourya=udaymourya
+UserudaymouryaPassword=87654321
+udayAdhar=123456789012
+udayCouse=bca
+udayFName=auauaua
+udayLName=Mourya
+udayName=uday
+udaySem=2
+udaymouryaAdhar=274792439376
+udaymouryaCouse=bca
+udaymouryaFName=bhanupratap
+udaymouryaLName=Mourya
+udaymouryaName=mohit
+udaymouryaSem=1

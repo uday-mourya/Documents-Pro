@@ -1,0 +1,28 @@
+#Registration Information
+#Fri Sep 01 17:02:49 IST 2023
+UdayAadhar=123456789012
+UdayAddress=ruuirfufrurfuru
+UdayCountry=india
+UdayCource=BCA
+UdayDOB=13/01/2004
+UdayFname=jjdjjhujhru
+UdayGender=Male
+UdayMN=9691669473
+UdayMname=hdhdhdh
+UdayName=Uday Mourya
+UdayPinCode=452022
+UdayState=mp
+Udaycity=indore
+preetiAadhar=232334344454
+preetiAddress=4, hdsfhuyksdh
+preetiCountry=India
+preetiCource=BSC
+preetiDOB=14/05/2002
+preetiFname=Preetam
+preetiGender=Female
+preetiMN=4454546464
+preetiMname=Shradha 
+preetiName=Preeti Sikka
+preetiPinCode=233343
+preetiState=Madhya Pradesh
+preeticity=indore

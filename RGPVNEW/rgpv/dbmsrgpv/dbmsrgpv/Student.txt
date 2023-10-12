@@ -1,0 +1,32 @@
+#Student Information
+#Wed Sep 06 14:58:02 IST 2023
+UserDebu=Debu
+UserDebuPassword=1234
+UserPiyush=Piyush
+UserPiyushPassword=123456
+Userabhi=abhi
+UserabhiPassword=123456
+Userabhishek=abhishek
+UserabhishekPassword=654321
+Userasd=asd
+UserasdPassword=dasd
+Userjgyjg=jgyjg
+UserjgyjgPassword=wewe
+Userjhgusf=jhgusf
+UserjhgusfPassword=sdfhlisdf
+Userkgtstr=kgtstr
+UserkgtstrPassword=12345
+Usermegha=megha
+UsermeghaPassword=12345
+Usernitin=nitin
+UsernitinPassword=1232
+Userpiuysua=piuysua
+UserpiuysuaPassword=12345
+Userpiyush=piyush
+UserpiyushPassword=1234
+Userrajes=rajes
+UserrajesPassword=0987654321
+Uservijay=vijay
+UservijayPassword=12345
+Userwsdasd=wsdasd
+UserwsdasdPassword=eqweqwe
