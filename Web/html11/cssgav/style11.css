@@ -1,0 +1,612 @@
+*{
+    margin:0px;
+}
+#container{
+    height:auto;
+    width:95%;
+    margin:auto;
+}
+#header{
+    height:60px;
+    background-color: white;
+}
+#logo{
+    height: 60px;
+    transition: 1s;
+}
+
+#logo:hover{
+    transform: rotate(180deg);
+}
+#header_content{
+    position:absolute;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    color:blueviolet;
+}
+#nav{
+    z-index: 1;
+    position: sticky;
+    top:0;
+    height:35px;
+    margin-top: 20px;
+    color: black;
+    background-color:#4FF7A1;
+}
+#nav ul{
+    list-style: none;
+    padding: 6px;
+}
+#nav ul li{
+    display: inline;
+}
+#nav ul li a{
+    color:white;
+    font-family: Lato;
+    font-size: 20px;
+    margin-left:88px;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+}
+#nav ul li a:hover{
+    color:black;
+}
+#nav ul li ul{
+    display: none;
+}
+#nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 150px;
+    margin-left: 350px;
+}
+#nav ul li ul li{
+    margin-left: -80px;
+    line-height: 45px;
+}
+#mqdemo{
+    /* background-color: whitesmoke; */
+    color:black;
+    font-size: 20px;    
+    padding: 10px;
+    font-family: Lato;
+}
+#image{
+    height: 500px;
+}
+#banner_img{
+    height: 500px;
+    width: 100%;
+}
+#contentarea{
+    font-family: Lato;
+    height:200px;
+    padding: 80px;
+    font-size: 20px;
+    text-align: justify;
+}
+#box{
+    height:400px;
+    padding: 20px;
+    width: 95%;
+    background-color: lightcyan;
+    /* position: absolute; */
+}
+#box1,#box2,#box3{
+    /* background-color: red; */
+    height:350px;
+    width:330px;
+    padding-top: 15px;
+    margin:25px;
+    float: left;
+    border-radius: 50%;
+    transition: 1s;
+}
+#boximg{
+    height:300px;
+    width:300px;
+    float: left;
+}
+#about{
+    height: 400px;
+    padding:50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#about1{
+    float: left;
+    height:300px;
+    width: 300px;
+    margin: 10px;
+}
+#aboutbanner{
+    height: 300px;
+    width: 300px;
+}
+#about2{
+    float: left;
+    margin: 10px;
+    height:290px;
+    text-align: justify;
+    font-size: 18px;
+    width: 710px;
+    padding: 20px;
+}
+#gallery{
+    font-family: Lato;
+    height: 450px;
+    padding-top: 50px;
+}
+#gallery_img{
+    margin-left: 120px;
+    height: 250px;
+    width: 250px;
+    /* border-radius: 50%; */
+    transition: 1s;
+    /* align-items: center; */
+}
+#gallery_img:hover{
+    transform: scale(1.2);
+    transform: rotate(180deg);
+    /* transform: rotateY(360deg); */
+box-shadow: 1px 5px 20px 1px goldenrod;
+}
+/* #login{
+    margin: 20px;
+    width: 100%;
+    height: 500px;
+    background-color: beige;
+    position: absolute;
+}
+#login-form{
+    margin: 20px;
+    width: 100%;
+    height: 500px;
+    background-color: beige;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+} */
+#contact{
+    height:400px;
+    background-color:lightgray;
+    padding: 30px;
+    font-family: candara;
+    margin-top: 30px
+}
+#contact1,#contact2,#contact3{
+    height: 290px;
+    width: 170px;
+    font-size: 20px;
+    font-family: Lato;
+    margin: 5px;
+    margin-left: 90px;
+    float:left;
+    padding: 20px;
+    line-height: 35px;
+}
+#contact4{
+    height: 330px;
+    width: 310px;
+    margin: 5px;
+    margin-right: 5px;
+    float:left;
+}
+#footer{
+    height:30px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#signin{
+    height:300px;
+    padding: 80px;
+}
+#sign_in{
+    font-family: candara;
+    padding: 20px;
+    height: 350px;
+    width: 400px;
+    margin: auto;
+}
+.input_field{
+    height:40px;
+    width: 400px;
+    margin: 5px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    border: 1 px solid indianred;
+    outline: 0px;
+    background-color: whitesmoke;
+}
+
+.input_btn{
+    font-family: candara;
+    font-size: 18px;
+    height:35px;
+    width: 350px;
+    margin: 5px;
+    margin-left: 50px;
+    background-color:#4FF7A1 
+    ;
+    border:0px;
+    color:white;
+    align-items: center;
+}
+#form_align{
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width:540px){
+    *{
+        margin:0px;
+    }
+    /* #container{
+        height:auto;
+        width:95%;
+        margin:auto;
+    } */
+    #header{
+        height:60px;
+        background-color: white;
+    }
+    #logo{
+        height: 80px;
+        transition: 1s;
+        justify-content: center;
+    }
+    
+    #logo:hover{
+        transform: rotate(180deg);
+    }
+    #header_content{
+        position:absolute;
+        margin-top: 30px;
+        font-size: 16px;
+        color:blueviolet;
+    }
+    #nav{
+        z-index: 1;
+        position: sticky;
+        top:0;
+        height:30px;
+        margin-top: 30px;
+        color: black;
+        background-color:#4FF7A1;
+    }
+    #nav ul{
+        list-style: none;
+        padding: 10px;
+    }
+    #nav ul li{
+        display: inline;
+    }
+    #nav ul li a{
+        color:white;
+        font-family: Lato;
+        font-size: 16px;
+        margin-left:10px;
+        text-decoration: none;
+    }
+    #nav ul li a:hover{
+        color:black;
+    }
+    #nav ul li ul{
+        display: none;
+    }
+    #nav ul li:hover ul{
+        display: block;
+        position: absolute;
+        background-color: black;
+        width: 150px;
+        margin-left: 350px;
+    }
+    #nav ul li ul li{
+        margin-left: -80px;
+        line-height: 45px;
+    }
+    #mqdemo{
+        /* background-color: whitesmoke; */
+        color:black;
+        font-size: 20px;    
+        padding: 10px;
+        font-family: Lato;
+    }
+    #image{
+        height: 500px;
+    }
+    #banner_img{
+        height: 500px;
+        width: 100%;
+    }
+    #contentarea{
+        font-family: Lato;
+        height:550px;
+        padding: 80px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    #box{
+        height:500px;
+        padding: 20px;
+        width: 95%;
+        background-color: lightcyan;
+        /* position: absolute; */
+    }
+    #box1,#box2,#box3{
+        /* background-color: red; */
+        height:350px;
+        width:330px;
+        margin:15px;
+        float: left;
+        border-radius: 50%;
+        transition: 1s;
+    }
+    #boximg{
+        height:300px;
+        width:300px;
+        float: left;
+    }
+    #about{
+        height: 400px;
+        padding:50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #about1{
+        float: left;
+        height:300px;
+        width: 300px;
+        margin: 10px;
+    }
+    #aboutbanner{
+        height: 300px;
+        width: 300px;
+    }
+    #about2{
+        float: left;
+        margin: 10px;
+        height:290px;
+        text-align: justify;
+        font-size: 18px;
+        width: 710px;
+        padding: 20px;
+    }
+    #gallery{
+        font-family: Lato;
+        height: 450px;
+        padding-top: 50px;
+    }
+    #gallery_img{
+        margin-left: 120px;
+        height: 250px;
+        width: 250px;
+        /* border-radius: 50%; */
+        transition: 1s;
+        /* align-items: center; */
+    }
+    #gallery_img:hover{
+        transform: scale(1.2);
+        transform: rotate(180deg);
+        /* transform: rotateY(360deg); */
+    box-shadow: 1px 5px 20px 1px goldenrod;
+    }
+    #contact{
+        height:400px;
+        background-color:lightgray;
+        padding: 30px;
+        font-family: candara;
+        margin-top: 30px
+    }
+    #contact1,#contact2,#contact3{
+        height: 290px;
+        width: 170px;
+        font-size: 20px;
+        font-family: Lato;
+        margin: 5px;
+        margin-left: 90px;
+        float:left;
+        padding: 20px;
+        line-height: 35px;
+    }
+    #contact4{
+        height: 330px;
+        width: 310px;
+        margin: 5px;
+        margin-right: 5px;
+        float:left;
+    }
+    #footer{
+        height:30px;
+        padding: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    @media screen and (max-width:540px){   
+    *{
+        margin:0px;
+    }
+    /* #container{
+        height:auto;
+        width:95%;
+        margin:auto;
+    } */
+    #header{
+        height:60px;
+        background-color: white;
+    }
+    #logo{
+        height: 60px;
+        transition: 1s;
+         justify-content: center;
+    }
+    
+    #logo:hover{
+        transform: rotate(180deg);
+    }
+    #header_content{
+        position:absolute;
+        margin-top: 20px;
+        font-size: 25px;
+        color:blueviolet;
+    }
+    #nav{
+        z-index: 1;
+        position: sticky;
+        top:0;
+        height:40px;
+        margin-top: 10px;
+        color: black;
+        background-color:#4FF7A1;
+    }
+    #nav ul{
+        list-style: none;
+        padding: 6px;
+    }
+    #nav ul li{
+        display: inline;
+    }
+    #nav ul li a{
+        color:white;
+        font-family: Lato;
+        font-size: 16px;
+        margin-left:10px;
+        text-decoration: none;
+    }
+    #nav ul li a:hover{
+        color:black;
+    }
+    #nav ul li ul{
+        display: none;
+    }
+    #nav ul li:hover ul{
+        display: block;
+        position: absolute;
+        background-color: black;
+        width: 150px;
+        margin-left: 350px;
+    }
+    #nav ul li ul li{
+        margin-left: -80px;
+        line-height: 45px;
+    }
+    #mqdemo{
+        /* background-color: whitesmoke; */
+        color:black;
+        font-size: 20px;    
+        padding: 10px;
+        font-family: Lato;
+    }
+    #image{
+        height: 500px;
+    }
+    #banner_img{
+        height: 500px;
+        width: 100%;
+    }
+    #contentarea{
+        font-family: Lato;
+        height:500px;
+        padding: 80px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    #box{
+        height:1180px;
+        width: 95%;
+        padding: 20px;
+        background-color: lightcyan;
+        /* position: absolute; */
+    }
+    #box1,#box2,#box3{
+        /* background-color: red; */
+        height:350px;
+        width:330px;
+        margin:25px;
+        margin-left: 100px;
+        float: left;
+        border-radius: 50%;
+        transition: 1s;
+    }
+    #boximg{
+        height:300px;
+        width:300px;
+        float: left;
+    }
+    #about{
+        height: 1100px;
+        padding:70px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #about1{
+        float: left;
+        height:250px;
+        width: 250px;
+        margin: 10px;
+    }
+    #aboutbanner{
+        height: 200px;
+        width: 200px;
+        margin-left: 65px;
+    }
+    #about2{
+        float: left;
+        margin: 10px;
+        height:800px;
+        text-align: justify;
+        font-size: 18px;
+        width: 300px;
+        padding: 20px;
+    }
+    #gallery{
+        font-family: Lato;
+        height: 800px;
+        padding-top: 50px;
+    }
+    #gallery_img{
+        margin-left: 120px;
+        height: 250px;
+        width: 250px;
+        /* border-radius: 50%; */
+        transition: 1s;
+        /* align-items: center; */
+    }
+    #gallery_img:hover{
+        transform: scale(1.2);
+        transform: rotate(180deg);
+        /* transform: rotateY(360deg); */
+    box-shadow: 1px 5px 20px 1px goldenrod;
+    }
+    #contact{
+        height:1200px;
+        background-color:lightgray;
+        padding: 30px;
+        font-family: candara;
+        margin-top: 30px
+    }
+    #contact1,#contact2,#contact3{
+        height: 290px;
+        width: 170px;
+        font-size: 20px;
+        font-family: Lato;
+        margin: 5px;
+        margin-left: 90px;
+        float:left;
+        padding: 20px;
+        line-height: 35px;
+    }
+    #contact4{
+        height: 330px;
+        width: 310px;
+        margin: 5px;
+        margin-right: 5px;
+        float:left;
+    }
+    #footer{
+        height:30px;
+        padding: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}

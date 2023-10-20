@@ -1,0 +1,45 @@
+out.print('<style>');
+out.print(body {);
+out.print(    background: rgb(99, 39, 120)
+out.print(}
+out.print(
+out.print(.form-control:focus {
+out.print(    box-shadow: none;
+out.print(    border-color: #BA68C8
+out.print(}
+out.print(
+out.print(.profile-button {
+out.print(    background: rgb(99, 39, 120);
+out.print(    box-shadow: none;
+out.print(    border: none
+out.print(}
+out.print(
+out.print(.profile-button:hover {
+out.print(    background: #682773
+out.print(}
+out.print(
+out.print(.profile-button:focus {
+out.print(    background: #682773;
+out.print(    box-shadow: none
+out.print(}
+out.print(
+out.print(.profile-button:active {
+out.print(    background: #682773;
+out.print(    box-shadow: none
+out.print(}
+out.print(
+out.print(.back:hover {
+out.print(    color: #682773;
+out.print(    cursor: pointer
+out.print(}
+out.print(
+out.print(.labels {
+out.print(    font-size: 11px
+out.print(}
+out.print(
+out.print(.add-experience:hover {
+out.print(    background: #BA68C8;
+out.print(    color: #fff;
+out.print(    cursor: pointer;
+out.print(    border: solid 1px #BA68C8
+out.print(}

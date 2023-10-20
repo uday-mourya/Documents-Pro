@@ -1,0 +1,403 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    height: auto;
+    width:97%;
+    margin: auto;
+}
+#logoline{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+#logo{
+    height: 60px;
+    width: 120px;
+    margin-left: 40px;
+}
+#logoline ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#logoline ul li {
+    margin-left: 100px;
+    display: inline;
+    font-weight: bold;
+    /* font-family: "Inter", sans-serif !important; */
+}
+
+#logoline ul li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-top: 30px;
+    text-decoration: none;
+    color: #0E2E50;
+}
+
+#logoline ul li a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+#button{
+    background-color: aqua;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#banner{
+    height: 550px;
+    margin-top: 10px !important;
+}
+#banner_img{
+    height: 550px;
+    width: 100%;
+    /* margin-left: 15px; */
+}
+#third{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 50px;
+    text-align: justify;
+}
+#sbox{
+    margin-top: 30px;
+    height:400px;
+    padding: 20px;
+    background-color:whitesmoke;
+}
+#sbox1,#sbox2,#sbox3{
+    height:300px;
+    width:370px;
+    margin:10px;
+    float: left;
+    background-color: white;
+    border-radius: 12px;
+}
+#boximg2{
+    height:200px;
+    width:370px;
+    float: left;
+    border-radius: 12px;
+}
+#heading1{
+    margin: 15px;
+}
+#box1,#box2,#box3:hover{
+    transform: rotateY(360deg);
+}
+#box{
+    margin-top: 30px;
+    height:500px;
+    padding: 20px;
+    background-color:whitesmoke;
+}
+#box1,#box2,#box3{
+    height:360px;
+    width:360px;
+    margin:10px;
+    float: left;
+    background-color:white;
+    border-radius: 12px;
+}
+#boximg{
+    height:200px;
+    width:360px;
+    border-radius: 12px;
+    float: left;
+}
+#heading2{
+    margin: 15px;
+}
+#fullname{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px;
+}
+#boxcon{
+   text-align: justify !important;
+   font-size: 15px;
+}
+#box1,#box2,#box3:hover{
+    transform: rotateY(360deg);
+}
+#about{
+   margin-top: 20px;
+    height: 420px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+#aboutheading{
+    margin-top: 15px;
+}
+#about1{
+    height:300px;
+    float: left;
+    width: 70%;
+    text-align: justify;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 10px;
+    padding: 20px;
+}
+#about2{
+    float: left;
+    height: 300px;
+    width:150px;
+    margin: 10px;
+}
+#aboutbanner{
+    height: 300px;
+    width: 300px;
+    justify-content: right;
+}
+#contact{
+    height: 500px;
+    background-color: #E2F9FD 9;
+    padding: 20px;
+}
+#contact1,#contact2,#contact3{
+    height: 290px;
+    width: 380px;
+    font-size: 16px;
+    font-family: Lato;
+    justify-content: center;
+    margin: 5px;
+    float:left;
+    padding: 20px;
+    line-height: 35px;
+}
+#footer{
+    height: 50px;
+    width: 97%;
+    background-color: #BEFA82;
+    position: absolute;
+}
+#footer1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#gallery{
+    height: 400px;
+    margin-top: 50px;
+}
+#gallery_img{
+    margin-top: 30px;
+    height: 200px;
+    width: 180px;
+    margin-left: 100px;
+    /* border-radius: 50%; */
+    /* transition: 1s; */
+    align-items: center;
+}
+@media only screen and (max-width:700px){
+    *{
+        margin: 0;
+        /* padding: 0; */
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     #container{
+         height: auto;
+         width:97%;
+         margin: auto;
+     }
+     #logoline{
+         height: 60px;
+         display: flex;
+         align-items: center;
+         /* margin-top: 40px; */
+     }
+     #logo{
+         height: 50px;
+         width: 80px;
+         margin-left: 40px;
+     }
+     #logoline ul {
+         list-style: none;
+         padding: 5px;
+     }
+     
+     #logoline ul li {
+         margin-left: 100px;
+         display: inline;
+         font-weight: bold;
+         /* font-family: "Inter", sans-serif !important; */
+     }
+     
+     #logoline ul li a {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         margin-top: 30px;
+         font-size: 16px;
+         text-decoration: none;
+         color: #0E2E50;
+     }
+     
+     #logoline ul li a:hover {
+         text-decoration: none;
+         color: crimson;
+     }
+     #button{
+         background-color: aqua;
+         border-top-right-radius: 8px;
+         border-bottom-left-radius: 8px;
+     }
+     #banner{
+         height: 550px;
+         margin-top: 10px !important;
+     }
+     #banner_img{
+         height: 550px;
+         width: 100%;
+         /* margin-left: 15px; */
+     }
+     #third{
+         margin-top: 20px;
+         margin-left: 70px;
+         margin-right: 70px;
+         padding: 50px;
+         text-align: justify;
+     }
+     #sbox{
+         margin-top: 30px;
+         height:1100px;
+         padding: 20px;
+         background-color:whitesmoke;
+     }
+     #sbox1,#sbox2,#sbox3{
+         height:300px;
+         width:370px;
+         margin:10px;
+         margin-left: 90px;
+         float: left;
+         background-color: white;
+         border-radius: 12px;
+     }
+     #boximg2{
+         height:200px;
+         width:370px;
+         float: left;
+         border-radius: 12px;
+     }
+     #heading1{
+         margin: 15px;
+     }
+     #box1,#box2,#box3:hover{
+         transform: rotateY(360deg);
+     }
+     #box{
+         margin-top: 30px;
+         height:1280px;
+         padding: 20px;
+         background-color:whitesmoke;
+     }
+     #box1,#box2,#box3{
+         height:360px;
+         width:360px;
+         margin:10px;
+         margin-left: 90px;
+         float: left;
+         background-color:white;
+         border-radius: 12px;
+     }
+     #boximg{
+         height:200px;
+         width:360px;
+         border-radius: 12px;
+         float: left;
+     }
+     #heading2{
+         margin: 15px;
+     }
+     #fullname{
+         font-weight: bold;
+         font-size: 18px;
+         margin: 10px;
+     }
+     #boxcon{
+        text-align: justify !important;
+        font-size: 15px;
+     }
+     #box1,#box2,#box3:hover{
+         transform: rotateY(360deg);
+     }
+     #about{
+        margin-top: 20px;
+         height: 840px;
+         font-family: 'Times New Roman', Times, serif;
+         background-color: whitesmoke;
+     }
+     #aboutheading{
+         margin-top: 15px;
+     }
+     #about1{
+         height:300px;
+         float: left;
+         width: 60%;
+         text-align: justify;
+         margin: 20px;
+         font-weight: 300;
+         font-size: 18px;
+         margin: 10px;
+         padding: 20px;
+     }
+     #about2{
+         float: left;
+         height: 300px;
+         width:150px;
+         margin: 30px;
+     }
+     #aboutbanner{
+         height: 300px;
+         width:200px;
+         justify-content: right;
+     }
+     #contact{
+         height: 1100px;
+         background-color: #E2F9FD 9;
+         padding: 20px;
+     }
+     #contact1,#contact2,#contact3{
+         height: 350px;
+         width: 380px;
+         font-size: 16px;
+         font-family: Lato;
+         justify-content: center;
+         margin: 5px;
+         float:left;
+         padding: 20px;
+         line-height: 35px;
+     }
+     #footer{
+         height: 50px;
+         width: 97%;
+         background-color:#801813;
+         position: absolute;
+     }
+     #footer1{
+         position: relative;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+     }
+     #gallery{
+         height: 700px;
+         margin-top: 50px;
+     }
+     #gallery_img{
+         margin-top: 30px;
+         height: 200px;
+         width: 180px;
+         margin-left: 100px;
+         /* border-radius: 50%; */
+         /* transition: 1s; */
+         align-items: center;
+     }
+}

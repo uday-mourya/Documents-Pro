@@ -1,0 +1,3 @@
+body .m-button-primary, body .m-button-secondary, body .m-button-primary:hover, body .m-button-secondary:hover { 
+    transition: all 1.2s !important;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#navbar{
+    height: 70px;
+    width: auto;
+    background-color: whitesmoke;
+    display: flex;
+}
+#logo{
+    height: 80px;
+    width: 120px;
+}
+#navbar ul{
+    display: inline;
+    padding: 20px;
+}
+#navbar ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 90px;
+}

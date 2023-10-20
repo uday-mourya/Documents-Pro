@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceBook</title>
+    <!-- <link rel="stylesheet" href="css/Face.css"> -->
+<style>
+    .container{
+        position: relative;
+        width: 100%;
+        /* height: 100vh; */
+        margin: auto;
+        padding:0px;
+        font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+        background: linear-gradient(white, #D3D8E8);
+        border: none;
+    }
+    header{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        background-color: #4c66a3;
+    }
+    header span{
+        position: absolute;
+        height: 38px;
+        width: 200px;
+        top:15.5px;
+        left: 40px; 
+        font-size: 35px;
+        font-weight: 1000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+    #loginEmailtext{
+        position: absolute;
+        top: 5px;
+        left: 65%;
+        font-size: 12px;
+        color: aliceblue;
+    }
+    #loginEmail{
+        position: absolute;
+        top: 22.5px;
+        left: 65%;
+        width: 150px;
+        border-radius:1% ;
+        border: none;
+    }
+    #loginPasswordtext{
+        position: absolute;
+        top: 5px;
+        left: 80%;
+        font-size: 12px;
+        color: aliceblue;
+    }
+    #loginPassword{
+        position: absolute;
+        top: 22.5px;
+        left: 80%;
+        width: 150px;
+        border-radius:1% ;
+        border: none;
+    }
+    #loginbtn{
+        position: absolute;
+        top: 22px;
+        left: 93%;
+        width: 40px;
+        height: 18px;
+        border-radius:1% ;
+        border: none;
+        background-color: rgb(0, 33, 182);
+    }
+    #loginbtn span{
+        font-size: 10px;
+        position: absolute;
+        top: 114%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 35px;
+        color: rgb(255, 255, 255);
+    }
+    #forgotAC{
+        position: absolute;
+        top: 43px;
+        left: 65%;
+        font-size: 12px;
+        color: rgb(43, 0, 104);
+
+    }
+    #signup {
+        position: relative;
+    }
+    #signup span:nth-child(1){
+        position: absolute;
+        left: 65%;
+        top: 80px;
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: black;
+
+    }
+    #signup span:nth-child(2){
+        position: absolute;
+        left: 65.5%;
+        top: 140px;
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+    }
+    #signup span:nth-child(3){
+        position: absolute;
+        left: 65.5%;
+        top: 140px;
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+    }
+    #name{
+        
+    }
+    #Surname{
+
+    }
+    .Mobile{
+
+    }
+    #signup1{
+        position: absolute;
+        left: 65.5%;
+        top: 180px;
+    }
+    #dobtext{
+        font-size: 13px;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>facebook</span>
+            <form action="">
+                <label id="loginEmailtext" for="email">Email or phone</label>
+                <input id="loginEmail" type="email" placeholder="email/Phone" name="loginEmail" >
+                <label id="loginPasswordtext" for="password">Password</label>
+                <input id="loginPassword" type="password" placeholder="enter password" name="loginPassword" >
+                <button id="loginbtn"><span>Log in</span></button>
+                <a href="#" id="forgotAC">Forgot account ?</a>
+            </form>
+            <form action=""id="signup">
+                <span>Create an account</span>
+                <span>It,s free and always will be.</span>
+                <div id="signup1">
+                    <input id="name" etype="text" name="name"placeholder="   First Name" >
+                    <input id="Surname" etype="text" name="Surname"placeholder="  Surname" >
+                    <br><br>
+                    <input id="Mobile "type="Mobile" name="Mobile" placeholder="  Enter Mobile no">
+                    <input id="email"type="Email" name="email" placeholder="   Enter email id">
+                    <br><br>
+                    <input id="Re-Mobile "type="Mobile"  placeholder="   Re - Enter Mobile no">
+                    <input id="Re-email"type="Email" placeholder="    Re - Enter email id">
+                    <br><br>
+                    <input id="signuppassword" type="password" name="signuppassword" placeholder="   enter new password">
+                    <p id="dobtext">Birth-of-date</p>
+                    <input type="date" name="dob" id="dob">
+                </div>
+            </form>
+        </header>
+    </div>
+</body>
+</html>

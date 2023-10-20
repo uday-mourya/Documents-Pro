@@ -1,0 +1,210 @@
+@media only screen and (max-width:700px) {
+    *{
+        margin: 0;
+    }
+    /* #container{
+        height:auto;
+        width:95%;
+        margin:auto;
+    } */
+    #mqdemo{
+        background-color: #9DF910 ;
+        color:black;
+        font-size: 14px;    
+        padding: 7px;
+        font-family: candara;
+    }
+    #header{
+        height: 90px;
+        width: 60px;
+    }
+    #logo{
+        height: 80px;
+        width: 100px;
+        transition: 1s;
+    }
+    #logo_content{
+        position:absolute;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    #nav{
+        /* z-index: 1; */
+        /* position: sticky;
+        top:10; */
+        margin-top: 40px;
+        height:40px;
+        background-color: #9DF910;
+    }
+    #nav ul{
+        display: flex;
+       list-style: none;
+       margin-top: 15px;
+    }
+    #nav ul li{
+        display: inline;
+        padding: 10px;
+    }
+    #nav ul li a{
+        margin-left: 10px;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+    }
+    #banner{
+        margin-top: 5px;
+        height: 550px;
+    }
+    #banner_img{
+        height: 500px;
+        width: 100%;
+    }
+    #about{
+        height: 880px;
+        padding:5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #about1{
+        float: left;
+        height:300px;
+        width: 200px;
+        margin: 10px;
+        margin-left: 170px;
+    }
+    #aboutbanner{
+        height: 300px;
+        width: 300px;
+    }
+    #about2{
+        float: left;
+        margin: 10px;
+        height:400px;
+        text-align: justify;
+        font-size: 18px;
+        width: 600px;
+        padding: 15px;
+    }
+    #box{
+        height:800px;
+        padding: 20px;
+        background-color: #D2DCAF 
+    }
+    #box1,#box2,#box3,#box4{
+        height:360px;
+        width:260px;
+        margin:10px;
+        margin-top: 20px;
+        margin-left: 30px;
+        float: left;
+        background-color: whitesmoke;
+    }
+    #boximg{
+        height:300px;
+        width:260px;
+        float: left;
+    }
+    #box1,#box2,#box3,#box4:hover{
+        transform: rotateY(360deg);
+    }
+    #gallery{
+        height: 850px;
+        margin-top: 50px;
+    }
+    #gallery_img{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        margin-left: 250px;
+        border-radius: 50%;
+        transition: 1s;
+        align-items: center;
+    }
+    #servicebox{
+        height:1350px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    #sbox1,#sbox2,#sbox3{
+        margin-top: 35px;
+        height:400px;
+        width:300px;
+        margin-left: 50px;
+        background-color:whitesmoke;
+        float: left;
+    }
+    #con1{
+        height: 50px;
+        margin: 40px;
+        background-color: whitesmoke;
+    }
+    #imgser{
+        height:400px;
+        width:300px;
+    }
+    #servicebox {
+        margin-left: 130px;
+    }
+    #boxim1{
+        height:300px;
+        width:300px;
+        margin-left: 150px;
+        float: left;
+    }
+    #servicebox #sbox3 #sh1{
+        text-align: justify;
+    }
+    #servicebox #sbox3 #sh2{
+        margin-top: 50px;
+        text-align: left;
+    
+    }
+    #servicebox #sbox3 #sh3,#sh4,#sh5{
+        margin-top: 25px;
+       margin-left: 30px;
+        text-align: left;
+    
+    }
+    #contact{
+        margin-top: 20px;
+        height:700px;
+        background-color:white;
+        padding: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #contact1,#contact2,#contact3,#contact4{
+        height: 290px;
+        width: 220px;
+        font-size: 20px;
+        font-family: Lato;
+        justify-content: center;
+        margin: 5px;
+        margin-left: 30px;
+        float:left;
+        padding: 20px;
+        line-height: 35px;
+    }
+    #fullname{
+        font-size: 22px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #designation{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #footer{
+        height:50px;
+        padding: 5px;
+        background-color: aliceblue;
+        /* position: absolute; */
+    }
+    #footer1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        justify-content: center;
+        /* position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+    }
+    
+}

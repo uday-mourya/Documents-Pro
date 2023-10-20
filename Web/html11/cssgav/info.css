@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.TextArea h1{
+   position: absolute;
+   top: 350px;
+   color: aliceblue;
+   font-size: 80px;
+}
+.TextArea h4{
+    position: absolute;
+    top: 470px;
+    font-size: 30px;
+    color: azure;
+}
+#secondrow{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}

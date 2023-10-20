@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.conatainer{
+    height:550px;
+    width: 355px;
+    /* border:solid #498af2; */
+    margin: auto;
+    position: relative;
+    
+}
+.smalform{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    background-color: #F7F7F7;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+.editform .image{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+.emailinput{
+    position:absolute;
+    width: 210px;
+    height: 30px;
+    top: 50%;
+    border: #555557;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.next-btn{
+    position:absolute;
+    width: 210px;
+    height: 30px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#498af2;
+    font-family:verdana;
+    font-size:14px;
+    color:white;
+    border-radius:5px 5px 5px 5px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: #555557;
+    cursor:pointer;
+    outline:none;
+
+}
+.next-btn a{
+    color: aliceblue;
+    border-radius: 5cap;
+}
+.needhelp{
+    position: absolute;
+    width: 83px;
+    height: 25px;
+    top: 80%;
+    left: 76.5%;
+    font-size: 10px;
+    color: blue;
+    transform: translate(-50%,-50%);
+}
+.logo{
+    position:absolute;
+    height: 120px;
+    width: 160px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.ghead{
+    position:absolute;
+    height: 120px;
+    width: 500px;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #989796;
+    font-size: 29px;
+    
+}
+.ghead2{
+    position:absolute;
+    height: 120px;
+    width: 500px;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+     font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    color:#555557;
+}
+#b1{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+}
+
+#b2{
+    position: absolute;
+    top: 90%;
+    left: 16%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+
+}

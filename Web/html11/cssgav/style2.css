@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+}
+#container{
+    height:auto;
+    width:95%;
+    margin:auto;
+}
+#mqdemo{
+    background-color: #9DF910 ;
+    color:black;
+    font-size: 14px;    
+    padding: 7px;
+    font-family: candara;
+}
+#nav{
+    height: 90px;
+    width: 60px;
+}
+#logo{
+    height: 80px;
+    width: 120px;
+    transition: 1s;
+}
+#logo_content{
+    position:absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#header{
+    
+    margin-top: 40px;
+    height:40px;
+    background-color: #9DF910;
+}
+#header ul{
+    display: flex;
+   list-style: none;
+}
+#header ul li{
+    display: inline;
+    padding: 10px;
+}
+#header ul li a{
+    margin-left: 80px;
+    align-items: center;
+    color:black;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#banner{
+    margin-top: 5px;
+    height: 550px;
+}
+#banner_img{
+    height: 500px;
+    width: 100%;
+}
+#about{
+    height: 400px;
+    padding:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#about1{
+    float: left;
+    margin: 10px;
+    height:290px;
+    text-align: justify;
+    font-size: 18px;
+    width: 710px;
+    padding: 20px;
+}
+#about2{
+    float: left;
+    height:300px;
+    width: 300px;
+    margin: 10px;
+}
+#aboutbanner{
+    height: 300px;
+    width: 300px;
+}
+#box{
+    height:400px;
+    padding: 20px;
+    background-color: #D2DCAF 
+}
+#box1,#box2,#box3,#box4{
+    height:360px;
+    width:260px;
+    margin:10px;
+    float: left;
+    background-color: whitesmoke;
+}
+#boximg{
+    height:300px;
+    width:260px;
+    float: left;
+}
+#box1,#box2,#box3,#box4:hover{
+    transform: rotateY(360deg);
+}
+#gallery{
+    height: 400px;
+    margin-top: 50px;
+}
+#gallery_img{
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    margin-left: 150px;
+    border-radius: 50%;
+    transition: 1s;
+    align-items: center;
+}
+#servicebox{
+    height:500px;
+    padding: 20px;
+    margin-top: 30px;
+}
+#sbox1,#sbox2,#sbox3{
+    margin-top: 35px;
+    height:400px;
+    width:300px;
+    margin-left: 50px;
+    background-color:whitesmoke;
+    float: left;
+}
+#con1{
+    height: 50px;
+    margin: 40px;
+    background-color: whitesmoke;
+}
+#imgser{
+    height:400px;
+    width:300px;
+}
+#boxim1{
+    height:300px;
+    width:300px;
+    margin-left: 90px;
+    float: left;
+}
+#servicebox #sbox3 #sh1{
+    text-align: justify;
+}
+#servicebox #sbox3 #sh2{
+    margin-top: 50px;
+    text-align: left;
+
+}
+#servicebox #sbox3 #sh3,#sh4,#sh5{
+    margin-top: 25px;
+   margin-left: 30px;
+    text-align: left;
+
+}
+#contact{
+    /* margin-top: 20px; */
+    height:400px;
+    background-color:white;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contact1,#contact2,#contact3,#contact4{
+    height: 290px;
+    width: 220px;
+    font-size: 20px;
+    font-family: Lato;
+    justify-content: center;
+    margin: 5px;
+    float:left;
+    padding: 20px;
+    line-height: 35px;
+}
+#fullname{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#designation{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#footer{
+    height:50px;
+    width:95%;
+    padding: 5px;
+    background-color: aliceblue;
+    position: absolute;
+}
+#footer1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+}
+#signin{
+    height:300px;
+    padding: 80px;
+}
+#sign_in{
+    font-family: candara;
+    padding: 20px;
+    height: 350px;
+    width: 400px;
+    margin: auto;
+}
+.input_field{
+    height:40px;
+    width: 400px;
+    margin: 5px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    border: 1 px solid indianred;
+    outline: 0px;
+    background-color: whitesmoke;
+}
+
+.input_btn{
+    font-family: candara;
+    font-size: 18px;
+    height:35px;
+    width: 350px;
+    margin: 5px;
+    margin-left: 50px;
+    background-color:#9DF910;
+    border:0px;
+    color:white;
+    align-items: center;
+}
+#form_align{
+    margin-top: 30px;
+}
+label #btn,label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 35px;
+    margin-right: 5px;
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display: none;
+}
+@media only screen and (max-width:360px) {
+    *{
+        margin: 0;
+    }
+    /* #container{
+        height:auto;
+        width:95%;
+        margin:auto;
+    } */
+    #mqdemo{
+        background-color: #9DF910 ;
+        color:black;
+        font-size: 14px;    
+        padding: 5px;
+        font-family: candara;
+    }
+    #nav{
+        height: 70px;
+        width: 60px;
+    }
+    #logo{
+        height: 60px;
+        width: 90px;
+        transition: 1s;
+    }
+    #logo_content{
+        position:absolute;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+    label #btn{
+        display: block;
+    }
+    #header ul{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background-color: blue;
+        top: 30px;
+        left: 100%;
+        text-align: center;
+        transition: all .10s;
+    }
+    #header{
+        height: 20px;
+        background-color: rgb(32,195,212);
+    }
+    
+    #header ul li {
+        display: block;
+        margin: 10px 0;
+        line-height: 5px;
+    }
+    #header ul li a{
+        font-size: 10px;
+    }
+    #check:checked ~ ul{
+        left:0%;
+    }
+    #check:checked ~ label #btn{
+       display:none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+     } /*hahahjah*/
+    #banner{
+        margin-top: 5px;
+        height: 350px;
+    }
+    #banner_img{
+        height: 350px;
+        width: 100%;
+    }
+    #about{
+        height: 890px;;
+        margin-top: 5px;
+        padding:0px 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #about1{
+        /* margin: auto; */
+        margin: 10px 0px;
+        height:580px;
+        text-align: justify;
+        background-color: aliceblue;
+        font-size: 16px;
+        width: 87%;
+    }
+    #about2{
+        height:180px;
+        width: 300px;
+        padding: 5px;
+    }
+    #aboutbanner{
+        height: 180px;
+        width: 300px;
+        margin: auto;
+    }
+    #box{
+        height:1470px;
+        /* padding: 20px;*/
+    }
+    #boxes{
+        margin: auto;
+        width: 200px;
+    }
+    #box1,#box2,#box3,#box4{
+        height:330px;
+        width:200px;
+        margin:10px;
+        margin-top: 20px;
+        /* margin-left: 30px; */
+        float: left;
+        /* background-color: whitesmoke; */
+    }
+    #boximg{
+        height:270px;
+        width:200px;
+        float: left;
+    }
+    #box1,#box2,#box3,#box4:hover{
+        transform: rotateY(360deg);
+    }
+    #gallery{
+        height: 800px;
+        margin-top: 20px;
+    }
+    #gallery22{
+      margin: auto;
+      width:200px;
+    }
+    #gallery_img{
+        margin-top: 30px;
+        height: 200px;
+        width: 200px;
+        margin: 20px 0px;
+        /* border-radius: 50%; */
+        /* transition: 1s; */
+        /* align-items: center; */
+    }
+    #servicebox{
+        height:1200px;
+        margin-top: 5px;
+    }
+    #serv{
+        background-color:red;
+        margin: auto;
+        width: 300px;
+    }
+    #sbox1,#sbox2,#sbox3{
+        margin-top: 35px;
+        height:350px;
+        width:200px;
+        background-color:whitesmoke;
+        float: left;
+    }
+    #con1{
+        height: 45px;
+        margin: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #imgser{
+        height:350px;
+        width:200px;
+    }
+    /* #boxim1{
+        height:300px;
+        width:300px;
+        margin-left: 150px;
+        float: left;
+    } */
+    #servicebox #serv #sbox3 #sh1{
+        text-align: justify;
+    }
+    #servicebox #serv #sbox3 #sh2{
+        margin-top: 50px;
+        text-align: left;
+    }
+    #sh{
+        margin: 10px;
+        font-size: 25px;
+    }
+    #sh2{
+        justify-content: space-between;
+    }
+    #servicebox #serv #sbox3 #sh3,#sh4,#sh5{
+        margin-top: 10px;
+       margin-left: 30px;
+        text-align: left;
+    
+    }
+    #contact{
+        margin-top: 20px;
+        height:1530px;
+        /* padding: 15px; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #contact1,#contact2,#contact3,#contact4{
+        height: 290px;
+        width: 150px;
+        font-size: 18px;
+        font-family: Lato;
+        justify-content: center;
+        margin: 20px;
+        margin-left: 30px;
+        float:left;
+        padding: 30px;
+        line-height: 35px;
+    }
+    #fullname{
+        font-size: 22px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #designation{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #footer{
+        height:50px;
+        padding: 5px;
+        position: absolute;
+        width:95%;
+    }
+    #footer1{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        justify-content: center;
+    }
+    #signin{
+        height:250px;
+        padding: 35px;
+    }
+    #sign_in{
+        font-family: candara;
+        padding: 10px;
+        height: 250px;
+        width: 250px;
+        margin: auto;
+    }
+    #inputfield{
+        height:25px;
+        width: 250px;
+        margin: 5px;
+        margin-left: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        border: 1 px solid indianred;
+        outline: 0px;
+        background-color: whitesmoke;
+    }
+    
+    #btn{
+        font-family: candara;
+        font-size: 18px;
+        height:35px;
+        width: 200px;
+        margin: 5px;
+        margin-left: 30px;
+        background-color:#9DF910;
+        color:white;
+        align-items: center;
+        border-radius: 30px;
+    }
+    #form_align{
+        margin-top: 30px;
+    }
+    .btn:hover{
+      background-color: aliceblue;
+    }
+}
