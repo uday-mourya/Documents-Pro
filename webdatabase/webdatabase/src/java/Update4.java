@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/Update3")
+@WebServlet("/Update4")
 public class Update4 extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -37,11 +37,11 @@ public class Update4 extends HttpServlet {
 
             Connection con = null;
             try {   
-           Class.forName("com.mysql.cj.jdbc.Driver");
-          con =  DriverManager.getConnection("jdbc:mysql://localhost:3306/server", "root", "udaysql@350");
-             String sql1="update reginfo set Name=?,Fname=?,Email=?,Password=?,Contact=? where UserId=?";
-             PreparedStatement ps = con.prepareStatement(sql1);
-             ps = con.prepareStatement(sql1);
+              Class.forName("com.mysql.cj.jdbc.Driver");
+              con =  DriverManager.getConnection("jdbc:mysql://localhost:3306/server", "root", "udaysql@350");
+              String sql1="update reginfo set Name=?,Fname=?,Email=?,Password=?,Contact=? where UserId=?";
+              PreparedStatement ps = con.prepareStatement(sql1);
+              ps = con.prepareStatement(sql1);
               ps.setString(1, name);
               ps.setString(2,fname);
               ps.setString(3, email);
@@ -78,7 +78,7 @@ public class Update4 extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException ex) {
-            Logger.getLogger(Update3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Update4.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
