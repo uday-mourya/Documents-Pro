@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/logo22.png">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <style>
+        /* Your existing CSS */
+
+/* Hamburger icon styling */
+#hamburger-icon {
+    display: none; /* Initially hidden */
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 360px) {
+    /* Show the hamburger icon at 360px or less */
+    #hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Hide other elements when hamburger menu is displayed */
+    /* Adjust these styles according to your layout */
+    /* For example, you can hide the navigation links */
+    #nav {
+        display: none;
+    }
+
+    /* Rotate the bars to create the "X" shape when clicked */
+    #hamburger-icon.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #hamburger-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger-icon.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+         <!-- Your existing HTML content -->
+
+        <!-- Hamburger menu icon -->
+        <div id="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</body>
+
+</html>

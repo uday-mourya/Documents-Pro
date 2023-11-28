@@ -1,0 +1,111 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ */
+package com.users.controller;
+
+import com.users.model.EmployeeDAO;
+import com.users.model.EmployeeDTO;
+import com.users.model.UserDAO;
+import com.users.model.UserDTO;
+import java.io.IOException;
+import java.io.PrintWriter;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author T460
+ */
+public class EmpPasswordUpdate extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+          String oldpass= request.getParameter("oldpassword");
+            String newpass=request.getParameter("newpassword");
+            String confpass=request.getParameter("confirmpassword");
+             EmployeeDAO edao = (EmployeeDAO) request.getSession().getAttribute("edao");
+            if(oldpass.equals(edao.getPassword())){ 
+            if(newpass.equals(confpass)){
+           
+            edao.setPassword(newpass);
+            EmployeeDTO edto=new EmployeeDTO();
+            try {
+                boolean b=edto.passwordUpdate(edao);
+                if(b){
+                    response.sendRedirect("index.jsp");
+                }else{
+                    response.sendRedirect("EmpPasswordUpdate.jsp");
+                   
+                }
+                
+            } catch (SQLException ex) {
+                Logger.getLogger(EmpPasswordUpdate.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            }else{
+                response.sendRedirect("EmpPasswordUpdate.jsp");
+            }
+            }else{
+                response.sendRedirect("EmpPasswordUpdate.jsp");
+            }
+        }
+    }
+
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+
+}
