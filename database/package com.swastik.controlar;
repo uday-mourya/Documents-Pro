@@ -1,0 +1,85 @@
+package com.swastik.controlar;
+
+import com.swastik.model.Updationdao2;
+import com.swastik.model.Updationdto2;
+import com.swastik.other.Message;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import java.io.IOException;
+
+public class UpdationServlet extends HttpServlet {
+    
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        
+        try {
+            Updationdto2 UpdateDto = new Updationdto2();
+            Updationdao2 UpdateDao = new Updationdao2();
+
+            
+            UpdateDao.setLoanAmmount(request.getParameter("loanammount"));
+            UpdateDao.setLoanTerm(request.getParameter("loanTerm"));
+            UpdateDao.setPermanentAddress(request.getParameter("caddress"));
+            UpdateDao.setEmail(request.getParameter("cemail"));
+            UpdateDao .setMobile(request.getParameter("cmobile"));
+            
+            HttpSession session = request.getSession();
+            AccountOpenDao userDao = (AccountOpenDao) session.getAttribute("activeUser");
+
+            // Set co-applicant/guarantor details
+            UpdateDao.setGuarantorName(request.getParameter("guarantorName"));
+            
+            
+            System.out.println(request.getParameter("guarantorName"));
+            
+            
+            UpdateDao.setGuarantorFather(request.getParameter("guarantorFather"));
+            UpdateDao.setGuarantorGender(request.getParameter("guarantorGender"));
+            UpdateDao.setGuarantorAddress(request.getParameter("guarantorAddress"));
+            UpdateDao.setGuarantorAccountNumber(request.getParameter("guarantorAccount"));
+            UpdateDao.setGuarantorBank(request.getParameter("bank"));
+            UpdateDao.setGuarantorIfsc(request.getParameter("ifscCode"));
+            UpdateDao.setGuarantorAdhar(request.getParameter("guarantorAdhar"));
+            UpdateDao.setGuarantorPan(request.getParameter("guarantorPan"));
+            UpdateDao.setAcc_num(userDao.getAccNum());
+            // Apply for the loan
+            boolean loanApplicationStatus = loanDto.applyLoan(loanDao);
+            
+            
+            if (loanApplicationStatus) {
+                Message message = new Message("Loan application submitted successfully!", "success", "alert-success");
+                session.setAttribute("message", message);
+                response.sendRedirect("Customer/documentupdate2.jsp");
+            } else {
+                Message message = new Message("Failed to submit UpdationRequest! Please try again.", "error", "alert-danger");
+                session.setAttribute("message", message);
+                response.sendRedirect("Customer/documentupdate2.jsp");
+            }
+            
+        } catch (IOException | NumberFormatException e) {
+            System.out.println(e);
+        }
+    }
+    
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+    
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+    
+    @Override
+    public String getServletInfo() {
+        return "Loan Application Servlet";
+    }
+}
