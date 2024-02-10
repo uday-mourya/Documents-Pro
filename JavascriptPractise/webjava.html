@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+        <table>
+            <tr>
+                <td>Enter Your Name</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Enter Your Surname</td>
+                <td><input type="text" id="Surname"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" onclick="Test()"></td>
+            </tr>
+        </table>
+
+    <script>
+      
+      function Test(){
+        var a=document.getElementById("name").value;
+        var b=document.getElementById("Surname").value;
+        var fname=a.concat(b);
+        console.log(fname);
+      }
+    </script>
+</body>
+</html>
